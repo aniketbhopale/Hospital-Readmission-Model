@@ -8,7 +8,7 @@ from sklearn.metrics import precision_recall_curve
 from sklearn.model_selection import GroupShuffleSplit
 
 SEED = 42
-MIN_RECALL = 0.50
+MIN_RECALL = 0.52
 BASE_DIR = Path(r"C:\Aniket\Hospital Model Final")
 DEFAULT_ML_CSV = Path(r"C:\Aniket\Hosp model\Final_diabetic_data.csv")
 DEFAULT_NEW_CSV = BASE_DIR / "Feature engineering & Processing" / "new_patients.csv"
