@@ -1,0 +1,3 @@
+encounter_id,patient_nbr,race,gender,age,admission_type_id,discharge_disposition_id,admission_source_id,time_in_hospital,payer_code,medical_specialty,num_lab_procedures,num_procedures,num_medications,number_outpatient,number_emergency,number_inpatient,diag_1,diag_2,diag_3,number_diagnoses,max_glu_serum,A1Cresult,metformin,repaglinide,glimepiride,glipizide,glyburide,pioglitazone,rosiglitazone,insulin,change,diabetesMed
+999000001,88001122,Caucasian,Female,[70-80),1,1,7,6,MC,InternalMedicine,58,2,21,1,2,3,Circulatory,Diabetes,Genitourinary,9,None,>8,No,No,No,No,No,No,No,Up,Ch,Yes
+999000002,88003344,AfricanAmerican,Male,[40-50),3,1,1,2,BC,Family/GeneralPractice,24,0,8,0,0,0,Diabetes,Circulatory,Other,4,None,Norm,Steady,No,No,No,No,No,No,No,No,Yes
