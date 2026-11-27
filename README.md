@@ -32,5 +32,8 @@ Historical training data (`Final_diabetic_data.csv`) comes from ten years (1999�
 
 ## Model & Threshold Choices
 
-* **Algorithm:** `LGBMClassifier` with `n_estimators = 800` (with 50-round early stopping), `learning_rate = 0.017268689827900557`, `num_leaves = 55`, `max_depth = 8`, `min_child_samples = 72`, `subsample = 0.7826262456580011` (`subsample_freq = 1`), `colsample_bytree = 0.7505188431637575`, `reg_alpha = 0.027449208711527943`, and `reg_lambda = 2.2718670804240984`.
-* **Patient-Grouped Splits:** Uses `GroupShuffleSplit` grouped by `patient_nbr` so encounters from the same patient do not leak across training and validation sets.
+LightGBM Model: Uses LightGBM to learn patterns across mixed clinical and encounter features with early stopping and regularization to keep generalization steady.
+
+Patient-Grouped Splits: Keeps encounters from the same patient grouped together across splits so patient records do not leak between training and validation.
+
+Recall-Focused Threshold: Prioritizes catching early readmissions—which are the minority class—by tuning the decision cutoff rather than relying blindly on a default split.
